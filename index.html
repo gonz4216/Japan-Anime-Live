@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7efeba23fd.js" crossorigin="anonymous"></script>
     <title>Japan Anime Live</title>
 </head>
 
@@ -13,11 +14,25 @@
     <section id="landing">
         <nav>
             <div class="nav-container">
-                <img src="./assets/LOGO.jpg" class="logo" alt="">
+                <img src="./assets/LOGO.jpg" class="logo" id="logogg" alt="">
                 <ul class="nav-links">
                     <li><a href="#" class="nav-link">Home</a></li>
                     <li><a href="#" class="nav-link" id="discord" onclick="discord()">Discord</a></li>
                     <li><a href="#features" class="nav-link nav-link-primary">Anime</a></li>
+                </ul>
+            </div>
+            <button class="btn-menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu-backdrop">
+                <button class="btn-menu btn-menu-close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+               
+                <ul class="menu-links">
+                    <li class="menu-list"><a href="#logogg" class="menu-link">Home</a></li>
+                    <li class="menu-list"><a href="#" class="menu-link" id="discord" onclick="discord()" >Discord</a></li>
+                    <li class="menu-list"><a href="#features" class="menu-link">Anime</a></li>
                 </ul>
             </div>
         </nav>

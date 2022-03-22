@@ -12,3 +12,12 @@ let logo = document.getElementsByClassName("footer-img")
   function img() {
     location.href = "#landing"
   }
+
+
+  function openMenu(){
+    document.body.classList += " menu-open"
+  }
+
+  function closeMenu(){
+    document.body.classList.remove('menu-open')
+  }
